@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <!-- HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <title>Vacation Suggestor</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Script files -->
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <!-- BODY -->
+  <body>
+    <div class=page-header>
+    <h1>Getaway</h1>
+    <p>A Quick Suggestion for your Next Vacation!</p>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <form id="survey">
+              <h4>Question 1</h4>
+              <p>Do you agree that global warming is adversly affecting our planet?
+                <div id="question">
+                  <label>
+                  <select id="q1">
+                    <option value="0">Disagree</option>
+                    <option value="2">Agree</option>
+                    <option value="1">Indifferent</option>
+                  </select>
+                  </label>
+                </div>
+              <h4>Question 2</h4>
+              <p>You're at a company party, you would be...</p>
+                <div id="question">
+                  <label>
+                  <select id="q2">
+                    <option value="0">on your phone.</option>
+                    <option value="2">at the open bar.</option>
+                    <option value="1">dancing to the music.</option>
+                  </select>
+                  </label>
+                </div>
+              <h4>Question 3</h4>
+              <p>The waiter asks you if you'd like a drink. You'd pick:</p>
+              <div id="question">
+                <label>
+                <select id="q3">
+                  <option value="0">Water</option>
+                  <option value="1">Soft Drink</option>
+                  <option value="2">Alcoholic Beverage</option>
+                </select>
+                </label>
+              </div>
+              <h4>Question 4</h4>
+              <p>A meteor is set to hit earth tomorrow! You will...</p>
+                <div id="question">
+                  <label>
+                  <select id="q4">
+                    <option value="0">write your own eulugy.</option>
+                    <option value="4">listen to your favorite mixtape.</option>
+                    <option value="7">try to find love</option>
+                  </select>
+                  </label>
+                </div>
+              <h4>Question 5</h4>
+              <p>A spider is in your house. You ...</p>
+                <div id="question">
+                  <label>
+                  <select id="q5">
+                    <option value="0">kill it with fire!</option>
+                    <option value="3">capture it and release it outside.</option>
+                    <option value="5">go on a long vacation.</option>
+                  </select>
+                </label>
+                </div>
+              <button class ="btn" type="submit">SUBMIT</button>
+            </form>
+          </div>
+          <div class="col-sm-6">
+          <p>ok</p>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
