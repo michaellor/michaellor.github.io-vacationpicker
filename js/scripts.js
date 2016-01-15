@@ -1,33 +1,35 @@
 $(document).ready(function() {
 
-  $("form#survey").submit(function(event) {
-  var sum1 = $("input[name=radio1]:checked").val();
-  var sum2 = $("input[name=radio2]:checked").val();
-  var sum3 = $("input[name=radio3]:checked").val();
-  var sum4 = $("input[name=radio4]:checked").val();
-  var sum5 = $("input[name=radio5]:checked").val();
+var sum1;
 
-  var total = $(sum1 + sum2 + sum3 + sum4 + sum5).val();
+  $("form").submit(function(event) {
+    var sum1 = $('form input[type=radio]:checked').val();
+    sum1 = parseInt(input);
 
 
-  $("form#survey").submit(function(event) {
-    for(var index = 1; index < 5; index += 1) {
-      var sum = $("sum[name=radio] + index + "]:checked
-    }
+
+  // var total = 0;
+  // var input;
+  //
+  // $("form").submit(function(event) {
+  //   for(var index = 1; index < 6; index ++) {
+  //     var input = $("input[name=radio" + index + "]:checked").val();
+  //     input = parseInt(input);
+  //     total += input;
+  //
+  //   }
+  });
+ console.log("sum1");
+
+  if (sum1 === 0 ) {
+    alert("total is zero");
   }
 
-  console.log(sum1,sum2,sum3,sum4,sum5, total);
+  else {
+    alert("not working!");
+  }
 
-  // if (total <= 0 && total >=3); {
-  //   $("place1").show()}
-  // }
-  // if (total <= 4 && total >=7) {
-  //   $("place1").show()}
-  // }
-  // if (total <= 0 && total >=3) {
-  //   $("place1").show()}
-  // }
+
 
   event.preventDefault();
   });
-});
