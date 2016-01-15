@@ -1,29 +1,28 @@
 $(document).ready(function() {
-  // -- Function to have single checkbox click only.
-  var checkID;
 
-  function toggle(checkbox) {
-    if (checkbox.checked) {
-      if (checkID) {
-        document.getElementById(checkID).checked = false;
-      }
-      checkID = checkbox.getAttribute('id');
-    }
-  }
+  $(':checkbox').bind('change', function() {
+          var thisClass = $(this).attr('class');
+          if ($(this).attr('checked')) {
+              $(':checkbox.' + thisClass + ":not(#" + this.id + ")").removeAttr('checked');
+          }
+          else {
+              $(this).attr('checked', 'checked');
+          }
+      });
 
-
-
-  // $("input:checkbox").click(function() {
-  //     if ($(this).is(":checked")) {
-  //         var group = "input:checkbox[name='" + $(this).attr("name") + "']";
-  //         $(group).prop("checked", false);
-  //         $(this).prop("checked", true);
-  //     } else {
-  //         $(this).prop("checked", false);
-  //     }
-
-    event.preventDefault();
-  });
-
+// function addClassCheck(el) {
+//
+//
+//   if(el.checked) {
+//     el.classList.add("checked");}
+//   else {
+//     el.classList.remove("checked");
+//     }
+//   }
+//
+//   if(document.getElementsByClassName("checked".length>1) {
+//     el.checked = false
+//     el.classList.remove("checked");
+//   }
 
 });
