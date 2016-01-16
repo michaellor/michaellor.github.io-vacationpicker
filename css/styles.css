@@ -1,4 +1,9 @@
 body {
-  background-color: grey;
+  background-color: #cccccc;
   text-align: center;
+}
+
+img.results {
+  width: 600px;
+  height: auto;
 }

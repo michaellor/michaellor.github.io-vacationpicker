@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <!-- HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <title>Vacation Suggestor</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Script files -->
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <!-- BODY -->
+  <body>
+    <div class=page-header>
+    <h1>Getaway</h1>
+    <p>A Quick Suggestion for your Next Vacation!</p>
+    <img src="img/image.png">
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <form>
+              <h4>Question 1</h4>
+              <p>Do you agree that global warming is adversly affecting our planet?
+                <div id="question1">
+                  <label>
+                  <div class="checkbox"><input name="quest1" type="radio" id="box1"  value="0" checked> Disagree
+                  </div>
+                  </label><br>
+                  <label>
+                  <div class="checkbox"><input name="quest1" type="radio" id="box2"  value="1"> Neither Agree or Disagree
+                  </div>
+                  </label><br>
+                  <label>
+                  <div class="checkbox"><input name="quest1" type="radio" id="box3"  value="2"> Agree
+                  </div>
+                </label>
+                </div>
+              <h4>Question 2</h4>
+              <p>You're at a company party, you would be...</p>
+                <div id="question2">
+                  <label>
+                    <div class="checkbox"><input type="radio" id="box1" name="radio2" value="0" checked> on your phone.
+                    </div>
+                    </label><br>
+                    <label>
+                    <div class="checkbox"><input type="radio" id="box2" name="radio2" value="1"> at the open bar.
+                    </div>
+                    </label><br>
+                    <label>
+                    <div class="checkbox"><input type="radio" id="box3" name="radio2" value="2"> dancing to the music.
+                    </div>
+                </label>
+                </div>
+              <h4>Question 3</h4>
+              <p>The waiter asks you if you'd like a drink. You'd pick:</p>
+                <div id="question3">
+                  <label>
+                  <div class="checkbox"><input type="radio" id="box1" name="radio3" value="0" checked> Water
+                  </div>
+                  </label><br>
+                  <label>
+                  <div class="checkbox"><input type="radio" id="box2" name="radio3" value="1"> Soft Drink
+                  </div>
+                  </label><br>
+                  <label>
+                  <div class="checkbox"><input type="radio" id="box3" name="radio3" value="2"> Alcoholic Beverage
+                  </div>
+                  </label>
+                </div>
+              <h4>Question 4</h4>
+              <p>A meteor is set to hit earth tomorrow! You will...</p>
+                <div id="question4">
+                  <label>
+                  <div class="checkbox"><input type="radio" id="box1" name="radio4" value="0" checked> write your own eulogy.
+                  </div>
+                  </label><br>
+                  <label>
+                  <div class="checkbox"><input type="radio" id="box2" name="radio4" value="1"> listen to your favorite mixtape.
+                  </div>
+                  </label><br>
+                  <label>
+                  <div class="checkbox"><input type="radio" id="box3" name="radio4" value="2"> try to find love.
+                  </div>
+                  </label>
+                </div>
+              <h4>Question 5</h4>
+              <p>A spider is in your house. You ...</p>
+                <div id="question5">
+                  <label>
+                  <div class="checkbox"><input type="radio" id="box1" name="radio5" value="1" checked> kill it with <strong>fire</strong>!</div>
+                  </label><br>
+                  <label>
+                  <div class="checkbox"><input type="radio" id="box2" name="radio5" value="4"> capture it and take it outside.
+                  </div>
+                  </label><br>
+                  <label>
+                  <div class="checkbox"><input type="radio" id="box3" name="radio5" value="7"> go on a long vacation.
+                  </div>
+                  </label>
+                </div>
+                <button type="submit" class="btn" value="reload">SUBMIT</button>
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <p>Not Satisfied?</p>
+            <input type="button" value="Try Again!" onClick="window.location.reload()">
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
